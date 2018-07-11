@@ -1,0 +1,726 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Speisekarte
+    </ion-title>
+  </ion-navbar>
+  <ion-toolbar no-border-top>
+    <ion-segment [(ngModel)]="menu">
+      <ion-segment-button value="Sushi">
+        Sushi
+      </ion-segment-button>
+      <ion-segment-button value="Vorspeisen">
+        Vorspeisen
+      </ion-segment-button>
+      <ion-segment-button value="Beilagen">
+        Beilagen
+      </ion-segment-button>
+      <ion-segment-button value="Hauptspeisen">
+        Hauptspeisen
+      </ion-segment-button>
+      <ion-segment-button value="Nachtisch">
+        Nachtisch
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <div [ngSwitch]="menu">
+    <ion-list *ngSwitchCase="'Sushi'">
+      <ion-item>
+        <h2>A1. Kappa-Maki (Gurken)</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-puppy-2.jpg">
+        </ion-thumbnail>
+        <h2>A2. Oschinko-Maki (eingelegter Rettich)</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-puppy-4.jpg">
+        </ion-thumbnail>
+        <h2>A3. Avokado-Maki</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-puppy-3.jpg">
+        </ion-thumbnail>
+        <h2>A4. Inari-Maki (Süßer Tofu)</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-puppy-3.jpg">
+        </ion-thumbnail>
+        <h2>A5. Tekka-Maki (Thunfisch)</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-puppy-3.jpg">
+        </ion-thumbnail>
+        <h2>A6. Sake-Maki (Lachs)</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-puppy-3.jpg">
+        </ion-thumbnail>
+        <h2>A7. Ebi-Maki (Garnelen)</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-puppy-3.jpg">
+        </ion-thumbnail>
+        <h2>A8. Unagi-Maki (Aal)</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-puppy-3.jpg">
+        </ion-thumbnail>
+        <h2>A9. Tamago-Maki</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-puppy-3.jpg">
+        </ion-thumbnail>
+        <h2>A10. Sake-Avokado-Maki (Lachs & Avokado)</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-puppy-3.jpg">
+        </ion-thumbnail>
+        <h2>A11. California-Maki (Surimi & Avokado)</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-puppy-3.jpg">
+        </ion-thumbnail>
+        <h2>A12. Tuna.Maki (Thunfischfilets)</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-puppy-3.jpg">
+        </ion-thumbnail>
+        <h2>A13. Lachs & Frischkäse-Maki</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-puppy-3.jpg">
+        </ion-thumbnail>
+        <h2>A14. Futo-Maki (Große Mix-Rolle)</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-puppy-3.jpg">
+        </ion-thumbnail>
+        <h2>A21. Inside-out Salat Roll</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-puppy-3.jpg">
+        </ion-thumbnail>
+        <h2>A22. Inside-out (Tobikko Roggen, Lachs, Gurken und Philadelphia-Käse)</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-puppy-3.jpg">
+        </ion-thumbnail>
+        <h2>A.23 Inside-out (Thunfisch, Gurken und Wasabi Tobikko Roggen mit scharfer Chilli Sauce)</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-puppy-3.jpg">
+        </ion-thumbnail>
+        <h2>A.24 Inside-out (Thunfisch, Gurken und Tobikko Roggen mit scharfer Chilli Sauce)</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-puppy-3.jpg">
+        </ion-thumbnail>
+        <h2>A.25 Inside-out Sake Roll</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-puppy-3.jpg">
+        </ion-thumbnail>
+        <h2>A26. Inside-out (Garnelen, Gurken, Avokado und Tobikko Roggen</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-puppy-3.jpg">
+        </ion-thumbnail>
+        <h2>A27. California Roll (Avokado und Surimi)</h2>
+      </ion-item>
+      <ion-item>
+      <ion-thumbnail item-start>
+        <img src="assets/img/thumbnail-puppy-3.jpg">
+      </ion-thumbnail>
+      <h2>A28. Unagi Roll (Avokado & Aal)</h2>
+       </ion-item>
+      <ion-item>
+      <ion-thumbnail item-start>
+        <img src="assets/img/thumbnail-puppy-3.jpg">
+      </ion-thumbnail>
+      <h2>A29. Tuna Roll (Thunfisch und Avokado)</h2>
+    </ion-item>
+      <ion-item>
+      <ion-thumbnail item-start>
+        <img src="assets/img/thumbnail-puppy-3.jpg">
+      </ion-thumbnail>
+      <h2>A30. Torikara Chumaki (frittierte Hähnchenstreifen)</h2>
+    </ion-item>
+      <ion-item>
+      <ion-thumbnail item-start>
+        <img src="assets/img/thumbnail-puppy-3.jpg">
+      </ion-thumbnail>
+      <h2>A51. Lachs Inside-out (Geröstete Zwiebeln)</h2>
+    </ion-item>
+      <ion-item>
+      <ion-thumbnail item-start>
+        <img src="assets/img/thumbnail-puppy-3.jpg">
+      </ion-thumbnail>
+      <h2>A52. Rinder Hackfleisch Inside-out (gerösteten Zwiebeln)</h2>
+    </ion-item>
+      <ion-item>
+      <ion-thumbnail item-start>
+        <img src="assets/img/thumbnail-puppy-3.jpg">
+      </ion-thumbnail>
+      <h2>A53. Lachs geräuchert (gerösteten Zwiebeln)</h2>
+    </ion-item>
+      <ion-item>
+      <ion-thumbnail item-start>
+        <img src="assets/img/thumbnail-puppy-3.jpg">
+      </ion-thumbnail>
+      <h2>A54. Rinder-Rolle Inside-out</h2>
+    </ion-item>
+      <ion-item>
+      <ion-thumbnail item-start>
+        <img src="assets/img/thumbnail-puppy-3.jpg">
+      </ion-thumbnail>
+      <h2>A31. Ebi Nigiri (Garnelen)</h2>
+    </ion-item>
+      <ion-item>
+      <ion-thumbnail item-start>
+        <img src="assets/img/thumbnail-puppy-3.jpg">
+      </ion-thumbnail>
+      <h2>A32. Sake Nigiri (Lachs)</h2>
+    </ion-item>
+      <ion-item>
+      <ion-thumbnail item-start>
+        <img src="assets/img/thumbnail-puppy-3.jpg">
+      </ion-thumbnail>
+      <h2>A33. Maguro Nigiri (Thunfisch)</h2>
+    </ion-item>
+      <ion-item>
+      <ion-thumbnail item-start>
+        <img src="assets/img/thumbnail-puppy-3.jpg">
+      </ion-thumbnail>
+      <h2>A34. Unagi Nigiri (Aal)</h2>
+    </ion-item>
+      <ion-item>
+      <ion-thumbnail item-start>
+        <img src="assets/img/thumbnail-puppy-3.jpg">
+      </ion-thumbnail>
+      <h2>A36. Saba Nigiri (Makrele)</h2>
+    </ion-item>
+      <ion-item>
+      <ion-thumbnail item-start>
+        <img src="assets/img/thumbnail-puppy-3.jpg">
+      </ion-thumbnail>
+      <h2>A38. Tako Nigiri (Oktupus)</h2>
+    </ion-item>
+      <ion-item>
+      <ion-thumbnail item-start>
+        <img src="assets/img/thumbnail-puppy-3.jpg">
+      </ion-thumbnail>
+      <h2>A39. Amaebi Nigiri (süße Grönland Garnelen)</h2>
+    </ion-item>
+      <ion-item>
+      <ion-thumbnail item-start>
+        <img src="assets/img/thumbnail-puppy-3.jpg">
+      </ion-thumbnail>
+      <h2>A40. Tamago Nigiri (Japanisches Eier Omlett)</h2>
+    </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-puppy-3.jpg">
+        </ion-thumbnail>
+        <h2>A41. Kani Nigiri (Surimi)</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-puppy-3.jpg">
+        </ion-thumbnail>
+        <h2>A42. Hokki Gai Nigiri (Hornmuscheln)</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-puppy-3.jpg">
+        </ion-thumbnail>
+        <h2>A43. Hotata Gai Nigiri (Jakobsmuschel)</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-puppy-3.jpg">
+        </ion-thumbnail>
+        <h2>A44. Ikura Nigiri (Fischrogen)</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-puppy-3.jpg">
+        </ion-thumbnail>
+        <h2>A45. Thunfisch Temaki</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-puppy-3.jpg">
+        </ion-thumbnail>
+        <h2>A46. Unagi (Aal) Temaki</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-puppy-3.jpg">
+        </ion-thumbnail>
+        <h2>A47. Lachs Temaki</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-puppy-3.jpg">
+        </ion-thumbnail>
+        <h2>A48. Surimi Temaki</h2>
+      </ion-item>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'Vorspeisen'">
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-kitten-1.jpg">
+        </ion-thumbnail>
+        <h2>1. Sakura Salat (Salat mit Seealgen, Surimi und Eieromlett)</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-kitten-3.jpg">
+        </ion-thumbnail>
+        <h2>2. Sashimi Salat (Salat mit rohem Fisch)</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-kitten-4.jpg">
+        </ion-thumbnail>
+        <h2>3. Chuka Ika Sansai (Pikanter Sepia-Seetangsalat)</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-kitten-2.jpg">
+        </ion-thumbnail>
+        <h2>4. Edamame Bohnen (junge Sojabohnen)</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-kitten-2.jpg">
+        </ion-thumbnail>
+        <h2>5. Kimuchi (Scharfer eingelegter Chinakohl)</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-kitten-2.jpg">
+        </ion-thumbnail>
+        <h2>6. Goma Wakame (Grüner Algensalat)</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-kitten-2.jpg">
+        </ion-thumbnail>
+        <h2>10. Peking Suppe (sauer-scharf)</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-kitten-2.jpg">
+        </ion-thumbnail>
+        <h2>11. Miso Suppe</h2>
+      </ion-item>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'Beilagen'">
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-duckling-1.jpg">
+        </ion-thumbnail>
+        <h2>12. Tako Yaki (Oktopusbällchen)</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-duckling-2.jpg">
+        </ion-thumbnail>
+        <h2>13. Gyoza (Maultaschen)</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-duckling-3.jpg">
+        </ion-thumbnail>
+        <h2>14. Agedashi Tofu</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-duckling-4.jpg">
+        </ion-thumbnail>
+        <h2>15. Inari</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-duckling-4.jpg">
+        </ion-thumbnail>
+        <h2>16. Mini Frühlingsrollen</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-duckling-4.jpg">
+        </ion-thumbnail>
+        <h2>17. Harumaki (Fleisch & Gemüsefüllung</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-duckling-4.jpg">
+        </ion-thumbnail>
+        <h2>18. Manduo (Japanisches gedämpftes und frittiertes Brot)</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-duckling-4.jpg">
+        </ion-thumbnail>
+        <h2>19. Japanischer Pfannkuchen</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-duckling-4.jpg">
+        </ion-thumbnail>
+        <h2>20. Lotuswurzel</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-duckling-4.jpg">
+        </ion-thumbnail>
+        <h2>21. Gemüse Tempura</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-duckling-4.jpg">
+        </ion-thumbnail>
+        <h2>22. Ebi Tempura (Garnelen in Teigmantel)</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-duckling-4.jpg">
+        </ion-thumbnail>
+        <h2>23. Mixed Tempura</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-duckling-4.jpg">
+        </ion-thumbnail>
+        <h2>24. gegrilltes Okra (Saison Gemüse)</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-duckling-4.jpg">
+        </ion-thumbnail>
+        <h2>25. gegrillte Süßkartoffeln</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-duckling-4.jpg">
+        </ion-thumbnail>
+        <h2>26. Gegrillte Zuchhini</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-duckling-4.jpg">
+        </ion-thumbnail>
+        <h2>27. Gegrillte Peperoni</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-duckling-4.jpg">
+        </ion-thumbnail>
+        <h2>28. Yaki Yasai (gegrilltes Gemüse)</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-duckling-4.jpg">
+        </ion-thumbnail>
+        <h2>29. Asuparabeekon (gegrillter Spargel im Baconmantel)</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-duckling-4.jpg">
+        </ion-thumbnail>
+        <h2>30. Yaki Mushrooms (gegrillte Champgnons)</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-duckling-4.jpg">
+        </ion-thumbnail>
+        <h2>61. Gohan (Weißer Reis)</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-duckling-4.jpg">
+        </ion-thumbnail>
+        <h2>62. Yaki Meshi (Gebratener Reis)</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-duckling-4.jpg">
+        </ion-thumbnail>
+        <h2>63. Yaki Soba (Gebratene Nudeln)</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-duckling-4.jpg">
+        </ion-thumbnail>
+        <h2>64. Yasai Men (Vegetarischen Udon Nudeln)</h2>
+      </ion-item>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'Hauptspeisen'">
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-duckling-1.jpg">
+        </ion-thumbnail>
+        <h2>31. Schweinebauch vom Teppangrill</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-duckling-2.jpg">
+        </ion-thumbnail>
+        <h2>32. Lachs Tempura (frittierter Lachs mit Tempurateig)</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-duckling-3.jpg">
+        </ion-thumbnail>
+        <h2>33. Kräuterseitling Pilz</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-duckling-4.jpg">
+        </ion-thumbnail>
+        <h2>34. Tori no Karaage (Frittierte Hähnchenbrust)</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-duckling-4.jpg">
+        </ion-thumbnail>
+        <h2>35. Frittierte Hähncehnstreifen</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-duckling-4.jpg">
+        </ion-thumbnail>
+        <h2>36. Sake Yaki (Lachsfilet)</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-duckling-4.jpg">
+        </ion-thumbnail>
+        <h2>37. Hirame (gegrillter Heilbutt)</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-duckling-4.jpg">
+        </ion-thumbnail>
+        <h2>38. Tilapiafilet vom Teppangrill</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-duckling-4.jpg">
+        </ion-thumbnail>
+        <h2>39. Zanderfilet vom Teppangill</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-duckling-4.jpg">
+        </ion-thumbnail>
+        <h2>40. Ibodai Yaki (Butterfisch vom Teppangrill)</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-duckling-4.jpg">
+        </ion-thumbnail>
+        <h2>41. Fisch Teriyaki vom Teppangrill</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-duckling-4.jpg">
+        </ion-thumbnail>
+        <h2>42. Riesengarnelen vom Teppangrill</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-duckling-4.jpg">
+        </ion-thumbnail>
+        <h2>43. Garnelen Teriyaki vom Teppangrill</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-duckling-4.jpg">
+        </ion-thumbnail>
+        <h2>44. Ebi Kushi (Garnelenspieße)</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-duckling-4.jpg">
+        </ion-thumbnail>
+        <h2>45. Yaki Ika (Gegrillter Tintenfisch)</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-duckling-4.jpg">
+        </ion-thumbnail>
+        <h2>46. Grüne Muscheln vom Teppangrill</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-duckling-4.jpg">
+        </ion-thumbnail>
+        <h2>47. Teba Yaki (Frittierte Hähnchenflügel)</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-duckling-4.jpg">
+        </ion-thumbnail>
+        <h2>48. Ramu Kushi (Lammspieße)</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-duckling-4.jpg">
+        </ion-thumbnail>
+        <h2>49. Gyu Hireniku Kushi (Rinderfiletspieße)</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-duckling-4.jpg">
+        </ion-thumbnail>
+        <h2>50. Yakitori (Hähnchenspieße)</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-duckling-4.jpg">
+        </ion-thumbnail>
+        <h2>51. Ahiru no Karaage (Ente Teriyaki)</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-duckling-4.jpg">
+        </ion-thumbnail>
+        <h2>52. Kohitsuji (Lammkarree)</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-duckling-4.jpg">
+        </ion-thumbnail>
+        <h2>53. Rindfleisch mit schwarzem Pfeffer</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-duckling-4.jpg">
+        </ion-thumbnail>
+        <h2>54. Rindfleisch Teriyaki</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-duckling-4.jpg">
+        </ion-thumbnail>
+        <h2>71. Reis mit gegrilltem Aal</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-duckling-4.jpg">
+        </ion-thumbnail>
+        <h2>72. Reis mit gegilltem Lachs</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-duckling-4.jpg">
+        </ion-thumbnail>
+        <h2>73. Reis mit Hähncehn Teriyaki</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-duckling-4.jpg">
+        </ion-thumbnail>
+        <h2>74. Reis mit Rindfleisch Teriyaki</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-duckling-4.jpg">
+        </ion-thumbnail>
+        <h2>75. Reis mit Ebi Tempura</h2>
+      </ion-item>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'Nachtisch'">
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-duckling-1.jpg">
+        </ion-thumbnail>
+        <h2>76. Gebackene Banane</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-duckling-2.jpg">
+        </ion-thumbnail>
+        <h2>77. Mochi mit heißen Schattenmorellen</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-duckling-3.jpg">
+        </ion-thumbnail>
+        <h2>100. Mango Eis</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-duckling-4.jpg">
+        </ion-thumbnail>
+        <h2>101. Schokolade</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-duckling-4.jpg">
+        </ion-thumbnail>
+        <h2>102. Vanille Eis</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-duckling-4.jpg">
+        </ion-thumbnail>
+        <h2>103. Stracciatella Eis</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-duckling-4.jpg">
+        </ion-thumbnail>
+        <h2>104. Rote Bohnen Eis</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-duckling-4.jpg">
+        </ion-thumbnail>
+        <h2>105. Grüner Tee Eis</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-duckling-4.jpg">
+        </ion-thumbnail>
+        <h2>106 Schwarzes Sesam Eis</h2>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/thumbnail-duckling-4.jpg">
+        </ion-thumbnail>
+        <h2>107. Haselnuss Eis</h2>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>

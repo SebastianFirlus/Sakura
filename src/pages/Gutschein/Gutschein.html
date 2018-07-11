@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Gutschein
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <ion-list>
+    <ion-title>Erwerben Sie einen Gutschein:</ion-title>
+  </ion-list>
+  <ion-list>
+    <ion-item>
+      <ion-input type="text" placeholder="Vorname"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="text" placeholder="Nachname"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="text" placeholder="E-Mail Adresse"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="text" placeholder="Gutscheinwert"></ion-input>
+    </ion-item>
+    <ion-item>
+      Mindestbestellwert 10€. Gutscheinwert nur in 5€ Schritten.
+    </ion-item>
+    <ion-item>
+      <ion-input type="text" placeholder="Beschenkte Person"></ion-input>
+    </ion-item>
+    <button ion-button block color="dark" (click)="doAlert()">Zahlungspflichtig bestellen</button>
+  </ion-list>
+  <p>Wichtiger Hinweis: Nach der erfolgreichen Bestellung erhalten Sie von uns eine Rechnung.<br/>
+      Bitte überweisen Sie den Rechnungsbetrag schnellstmöglich, innerhalb von 7 Tagen.<br/>
+      Nach Zahlungseingang bei uns erhalten Sie einen vorläuffigen Gutschein als PDF-Datei. Bei Ihrem nächsten Besuch können Sie den vorläuffigen Gutschein gegen ein Original eintauschen.
+  </p>
+</ion-content>
