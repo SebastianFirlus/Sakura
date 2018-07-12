@@ -6,6 +6,7 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'Speisekarte.html'
 })
 export class SpeisekartePage {
+  menu: string = "Sushi";
 
   constructor(public navCtrl: NavController) {
 
