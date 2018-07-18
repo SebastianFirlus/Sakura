@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { AlertController } from 'ionic-angular';
+import { ToastController } from 'ionic-angular';
 
 @Component({
   selector: 'page-Gutschein',
@@ -8,16 +8,18 @@ import { AlertController } from 'ionic-angular';
 })
 export class GutscheinPage {
 
-      constructor(public navCtrl: NavController, public alertCtrl: AlertController) {
+  constructor(public navCtrl: NavController, public toastCtrl: ToastController) {
 
-    //ToDO Cannot find name doAlert
-    /*doAlert() {
-      let alert = this.alertCtrl.create({
-        title: 'BESTELLUNG ERFOLGREICH!',
-        message: 'Ihre Bestellung ist bei uns eingegangen. Wir setzen uns schnellstmöglich mit Ihnen in Verbindung',
-        buttons: ['Ok']
-      });
-      alert.present()
-    }*/
   }
+
+  showToast() {
+    const toast = this.toastCtrl.create({
+      message: 'Ihre Bestellung ist bei uns eingegangen.',
+      showCloseButton: true,
+      position: 'middle',
+      closeButtonText: 'Ok'
+    });
+    toast.present();
+  }
+
 }

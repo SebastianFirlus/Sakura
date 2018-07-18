@@ -5,30 +5,30 @@
     </ion-title>
   </ion-navbar>
 </ion-header>
-<ion-content padding>
+<ion-content padding class="greyBackground">
   <ion-list>
-    <ion-title>Erwerben Sie einen Gutschein:</ion-title>
+    <h1>Erwerben Sie einen Gutschein:</h1>
   </ion-list>
   <ion-list>
-    <ion-item>
+    <ion-item color="custom-lightgrey">
       <ion-input type="text" placeholder="Vorname"></ion-input>
     </ion-item>
-    <ion-item>
+    <ion-item color="custom-lightgrey">
       <ion-input type="text" placeholder="Nachname"></ion-input>
     </ion-item>
-    <ion-item>
+    <ion-item color="custom-lightgrey">
       <ion-input type="text" placeholder="E-Mail Adresse"></ion-input>
     </ion-item>
-    <ion-item>
+    <ion-item color="custom-lightgrey">
       <ion-input type="text" placeholder="Gutscheinwert"></ion-input>
     </ion-item>
-    <ion-item>
-      Mindestbestellwert 10€. Gutscheinwert nur in 5€ Schritten.
+    <ion-item color="custom-lightgrey">
+      <p>Mindestbestellwert 10€. Gutscheinwert nur in 5€ Schritten.</p>
     </ion-item>
-    <ion-item>
+    <ion-item color="custom-lightgrey">
       <ion-input type="text" placeholder="Beschenkte Person"></ion-input>
     </ion-item>
-    <button ion-button block color="dark" (click)="doAlert()">Zahlungspflichtig bestellen</button>
+    <button block color="custom-yellow" ion-button (click)="showToast()">Zahlungspflichtig bestellen</button>
   </ion-list>
   <p>Wichtiger Hinweis: Nach der erfolgreichen Bestellung erhalten Sie von uns eine Rechnung.<br/>
       Bitte überweisen Sie den Rechnungsbetrag schnellstmöglich, innerhalb von 7 Tagen.<br/>
