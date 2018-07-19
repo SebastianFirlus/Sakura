@@ -8,30 +8,30 @@
 <ion-content padding class="greyBackground">
   <h1>Tisch Reservierung</h1>
   <ion-item color="custom-lightgrey">
-    <ion-input type="text" placeholder="Vorname" [(ngModel)]="name"></ion-input>
+    <ion-input type="text" placeholder="Vorname" [(ngModel)]="reservation.vorname"></ion-input>
   </ion-item>
   <ion-item color="custom-lightgrey">
-    <ion-input type="text" placeholder="Nachname"></ion-input>
+    <ion-input type="text" placeholder="Nachname" [(ngModel)]="reservation.nachname"></ion-input>
   </ion-item>
   <ion-item color="custom-lightgrey">
-    <ion-input type="email" placeholder="E-Mail Adresse"></ion-input>
+    <ion-input type="email" placeholder="E-Mail Adresse" [(ngModel)]="reservation.email"></ion-input>
   </ion-item>
   <ion-item color="custom-lightgrey">
-    <ion-input type="tel" placeholder="Telefonnummer"></ion-input>
+    <ion-input type="tel" placeholder="Telefonnummer" [(ngModel)]="reservation.number"></ion-input>
   </ion-item>
   <ion-item color="custom-lightgrey">
-    <ion-input type="text" placeholder="Datum"></ion-input>
+    <ion-input type="text" placeholder="Datum" [(ngModel)]="reservation.date"></ion-input>
   </ion-item>
   <ion-item color="custom-lightgrey">
-    <ion-input type="text" placeholder="Uhrzeit"></ion-input>
+    <ion-input type="text" placeholder="Uhrzeit" [(ngModel)]="reservation.time"></ion-input>
   </ion-item>
   <ion-item color="custom-lightgrey">
-    <ion-input type="number" placeholder="Anzahl der Personen"></ion-input>
+    <ion-input type="number" placeholder="Anzahl der Personen" [(ngModel)]="reservation.persons"></ion-input>
   </ion-item>
   <ion-item color="custom-lightgrey">
-    <ion-input type="text" placeholder="Bemerkungen"></ion-input>
+    <ion-input type="text" placeholder="Bemerkungen" [(ngModel)]="reservation.additional"></ion-input>
   </ion-item>
-  <button block color="custom-yellow" ion-button (click)="placeReservation(name)">Abschicken</button>
+  <button block color="custom-yellow" ion-button (click)="postReservation(reservation)">Abschicken</button>
   <h1>Restaurant Sakura Sushi & Grill</h1>
   <p>Mendener Straße 117<br/>45219 Essen-Kettwig</p>
   <p>Tel.: 02054-82200<br/>Fax.: 02054-871943<br/>E-Mail: info@sakura-essen.de</p>

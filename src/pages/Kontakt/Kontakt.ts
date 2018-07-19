@@ -9,10 +9,20 @@ import {ReservationProvider} from "../../providers/reservation/reservation";
 })
 export class KontaktPage {
 
-  name: any;
+  reservation = {
+    vorname: null,
+    nachname: null,
+    email: null,
+    number: null,
+    date: null,
+    time: null,
+    persons: null,
+    additional: null
+  };
+
 
   constructor(public navCtrl: NavController, public toastCtrl: ToastController, private _reservation: ReservationProvider) {
-    this.name = "Kein Name";
+
   }
 
   showToast() {
@@ -26,14 +36,24 @@ export class KontaktPage {
   }
 
 
-  placeReservation(name) {
-    this._reservation.placeReservation(name).subscribe(
+
+  placeReservation(reservierung) {
+    this._reservation.placeReservation(JSON.stringify(reservierung)).subscribe(
       data => {
         console.log(data);
       }
     );
-    console.log("Sende Reservierung für " + name);
+    console.log("Sende Reservierung für " + this.reservation.vorname + ' ' + this.reservation.nachname);
     this.showToast()
+  }
+
+
+
+  postReservation(body){
+    this._reservation.postReservation(body);
+    console.log("Kontakt.ts sendet " + body)
+    console.log("send reservation");
+    this.showToast();
   }
 
 

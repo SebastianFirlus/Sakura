@@ -25,9 +25,6 @@ app.use(bodyParser.json());
 app.use(methodOverride());
 app.use(cors());
 
-var reservations = [{
-  //TODO: Add the content of the sendmail to this array (Backlog)
-}]
 
 var news = [
   {id: 1, heading: "Neue Preise", body: "Wir haben unsere Preise aktualisiert!"},
@@ -40,11 +37,23 @@ var actionsM = [
 
 var actionsW = [
   {id: 1, heading: "KW 23 Aktion" ,body: "Alle 0,5L Softdrinks für nur 3€! Zeigen Sie einfach die App vor der Bestellung vor."}
-]
+];
 
 var specials = [
   {id: 1, heading: "Zurzeit leider keine Specials" ,body: "Schauen Sie einfach später nochmal vorbei :)"}
-]
+];
+
+var _reservation = {
+  _vorname: null,
+  _nachname: null,
+  _email: null,
+  _number: null,
+  _date: null,
+  _time: null,
+  _persons: null,
+  _additional: null
+}
+
 
 //functions
 function sendResMail(content){
@@ -52,7 +61,7 @@ function sendResMail(content){
     from: FromMail,
     to: TargetMail ,
     subject: Subject,
-    text: content,
+    html: content,
   }, (error, info) => {
     if (error) {
       console.log(error);
@@ -64,8 +73,21 @@ function sendResMail(content){
 
 
 //Routes
+app.post('/sendMail', function (req, res) {
+  this._vorname = req.body.vorname;
+  this._nachname = req.body.nachname;
+  this._email = req.body.email;
+  this._number = req.body.number;
+  this._date = req.body.date;
+  this._time = req.body.time;
+  this._persons = req.body.persons;
+  this._additional = req.body._additional;
+  console.log("it worked")
+})
+
 app.get('/sendMail/', function (req, res) {
-  sendResMail(req.query.id)
+  console.log(req.body);
+  sendResMail(req.query.id);
 });
 
 app.get('/news', function (req, res) {
