@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { ToastController } from 'ionic-angular';
+import {ReservationProvider} from "../../providers/reservation/reservation";
 
 @Component({
   selector: 'page-Kontakt',
@@ -8,8 +9,10 @@ import { ToastController } from 'ionic-angular';
 })
 export class KontaktPage {
 
-  constructor(public navCtrl: NavController, public toastCtrl: ToastController) {
+  name: any;
 
+  constructor(public navCtrl: NavController, public toastCtrl: ToastController, private _reservation: ReservationProvider) {
+    this.name = "Kein Name";
   }
 
   showToast() {
@@ -21,5 +24,17 @@ export class KontaktPage {
     });
     toast.present();
   }
+
+
+  placeReservation(name) {
+    this._reservation.placeReservation(name).subscribe(
+      data => {
+        console.log(data);
+      }
+    );
+    console.log("Sende Reservierung für " + name);
+    this.showToast()
+  }
+
 
 }

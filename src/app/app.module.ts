@@ -12,6 +12,11 @@ import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import {HttpClientModule} from "@angular/common/http";
+import { ReservationProvider } from '../providers/reservation/reservation';
+import {HttpModule} from "@angular/http";
+import { NewsProvider } from '../providers/news/news';
+import { ActionsProvider } from '../providers/actions/actions';
 
 @NgModule({
   declarations: [
@@ -25,7 +30,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    HttpModule,
+    HttpClientModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -40,7 +47,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    ReservationProvider,
+    HttpModule,
+    HttpClientModule,
+    NewsProvider,
+    ActionsProvider
   ]
 })
 export class AppModule {}

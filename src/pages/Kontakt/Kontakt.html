@@ -8,7 +8,7 @@
 <ion-content padding class="greyBackground">
   <h1>Tisch Reservierung</h1>
   <ion-item color="custom-lightgrey">
-    <ion-input type="text" placeholder="Vorname"></ion-input>
+    <ion-input type="text" placeholder="Vorname" [(ngModel)]="name"></ion-input>
   </ion-item>
   <ion-item color="custom-lightgrey">
     <ion-input type="text" placeholder="Nachname"></ion-input>
@@ -31,7 +31,7 @@
   <ion-item color="custom-lightgrey">
     <ion-input type="text" placeholder="Bemerkungen"></ion-input>
   </ion-item>
-  <button block color="custom-yellow" ion-button (click)="showToast()">Abschicken</button>
+  <button block color="custom-yellow" ion-button (click)="placeReservation(name)">Abschicken</button>
   <h1>Restaurant Sakura Sushi & Grill</h1>
   <p>Mendener Straße 117<br/>45219 Essen-Kettwig</p>
   <p>Tel.: 02054-82200<br/>Fax.: 02054-871943<br/>E-Mail: info@sakura-essen.de</p>

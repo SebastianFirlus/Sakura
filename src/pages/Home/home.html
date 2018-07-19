@@ -4,15 +4,17 @@
   </ion-navbar>
 </ion-header>
 <ion-content padding class="greyBackground">
-  <h1>NEUIGKEITEN</h1>
-  <ion-card class="greyBackgroundCard">
-    <ion-card-header class="cardHeader">
-      Mitteilung vom 20.06.2018
-    </ion-card-header>
-    <ion-card-content class="cardContent">
-      Ab sofort finden Sie auf unserer Speisekarte Oktopusbällchen auf der Dauerkarte.
-    </ion-card-content>
-  </ion-card>
+    <h1>NEUIGKEITEN</h1>
+  <div *ngFor="let new of  newsArray">
+    <ion-card class="greyBackgroundCard">
+      <ion-card-header class="cardHeader">
+        {{ new.heading }}
+      </ion-card-header>
+      <ion-card-content class="cardContent">
+        {{ new.body }}
+      </ion-card-content>
+    </ion-card>
+  </div>
   <h1> JAPANESE ALL YOU CAN EAT </h1>
   <p> Wir bieten Ihnen eine große Auswahl Sushis, Fisch und Meeresfrüchte sowie Fingerfoods, feine Salate,
     Nudeln (Suppen), Tempura-Gerichte und Spezialitäten vom Teppan-Grill.</p>

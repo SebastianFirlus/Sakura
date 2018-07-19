@@ -7,30 +7,36 @@
 </ion-header>
 <ion-content padding class="greyBackground">
   <h1>Aktion des Monats</h1>
+  <div *ngFor="let monthaction of MonthActionsArray">
   <ion-card class="greyBackgroundCard">
     <ion-card-header class="cardHeader">
-      Juni Aktion
+      {{monthaction.heading}}
     </ion-card-header>
     <ion-card-content class="cardContent" color="custom-white">
-      Nur im Juni! Bei 5 vollzahlenden Erwachsenen, isst die 6. Person GRATIS! Zeigen Sie einfach die App vor der Bestellung vor.
+      {{monthaction.body}}
     </ion-card-content>
   </ion-card>
+  </div>
   <h1>Aktion der Woche</h1>
+  <div *ngFor="let weekaction of WeekActionsArray">
   <ion-card class="greyBackgroundCard">
     <ion-card-header class="cardHeader">
-      KW 23 Aktion
+      {{weekaction.heading}}
     </ion-card-header>
     <ion-card-content class="cardContent">
-      Alle 0,5L Softdrinks für nur 3€! Zeigen Sie einfach die App vor der Bestellung vor.
+      {{weekaction.body}}
     </ion-card-content>
   </ion-card>
+  </div>
   <h1>Specials</h1>
+  <div *ngFor="let special of SpecialsArray">
   <ion-card class="greyBackgroundCard">
     <ion-card-header class="cardHeader">
-      Zurzeit gibt es keine Specials
+      {{special.heading}}
     </ion-card-header>
     <ion-card-content class="cardContent">
-      Schauen Sie einfach später nochmal vorbei :)
+      {{special.body}}
     </ion-card-content>
   </ion-card>
+  </div>
 </ion-content>
