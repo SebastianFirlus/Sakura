@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { ToastController } from 'ionic-angular';
 import {ReservationProvider} from "../../providers/reservation/reservation";
+import { CallNumber } from '@ionic-native/call-number';
 
 @Component({
   selector: 'page-Kontakt',
@@ -21,7 +22,8 @@ export class KontaktPage {
   };
 
 
-  constructor(public navCtrl: NavController, public toastCtrl: ToastController, private _reservation: ReservationProvider) {
+  constructor(public navCtrl: NavController, public toastCtrl: ToastController, private _reservation: ReservationProvider,
+              private callNumber: CallNumber) {
 
   }
 
@@ -56,5 +58,9 @@ export class KontaktPage {
     this.showToast();
   }
 
+
+  callJoint(telephoneNumber) {
+    this.callNumber.callNumber(`0205482200`, true);
+  }
 
 }

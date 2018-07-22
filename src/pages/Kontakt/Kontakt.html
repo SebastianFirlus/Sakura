@@ -34,10 +34,15 @@
   <button block color="custom-yellow" ion-button (click)="postReservation(reservation)">Abschicken</button>
   <h1>Restaurant Sakura Sushi & Grill</h1>
   <p>Mendener Straße 117<br/>45219 Essen-Kettwig</p>
-  <p>Tel.: 02054-82200<br/>Fax.: 02054-871943<br/>E-Mail: info@sakura-essen.de</p>
+  <p>
+    Tel.: 02054-82200
+    <br><button type="button" ion-button color="primary" (click)="callNumber()">Anrufen</button><br/>
+
+    <br>Fax: <a href="02054-871943">02054-871943</a><br/>
+      E-Mail: <a href="mailto:info@sakura-essen.de">info@sakura-essen.de</a></p>
   <a href="https://de-de.facebook.com/Sakura.Essen/"><img src="../../assets/imgs/facebook.png" height="40px" width="40px"></a>
-  <a href="https://www.instagram.com/sebastian_7991/"><img src="../../assets/imgs/instagram.png" height="40px" width="40px"></a>
-  <a href="https://www.snapchat.com/add/sebastian_7991"><img src="../../assets/imgs/snapchat.png" height="40px" width="40px"></a>
+  <a href="https://www.instagram.com/"><img src="../../assets/imgs/instagram.png" height="40px" width="40px"></a>
+  <a href="https://www.snapchat.com/"><img src="../../assets/imgs/snapchat.png" height="40px" width="40px"></a>
   <a href="https://www.yelp.de/biz/sakura-essen"><img src="../../assets/imgs/yelp.png" height="40px" width="40px"></a>
   <a href="https://www.tripadvisor.de/Restaurant_Review-g187375-d3673136-Reviews-Sakura-Essen_North_Rhine_Westphalia.html"><img src="../../assets/imgs/tripadvisor.png" height="40px" width="40px"></a>
 </ion-content>

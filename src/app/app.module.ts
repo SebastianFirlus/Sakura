@@ -17,6 +17,7 @@ import { ReservationProvider } from '../providers/reservation/reservation';
 import {HttpModule} from "@angular/http";
 import { NewsProvider } from '../providers/news/news';
 import { ActionsProvider } from '../providers/actions/actions';
+import { CallNumber } from '@ionic-native/call-number';
 
 @NgModule({
   declarations: [
@@ -52,7 +53,8 @@ import { ActionsProvider } from '../providers/actions/actions';
     HttpModule,
     HttpClientModule,
     NewsProvider,
-    ActionsProvider
+    ActionsProvider,
+    CallNumber
   ]
 })
 export class AppModule {}
