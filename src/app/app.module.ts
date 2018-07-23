@@ -19,6 +19,7 @@ import { NewsProvider } from '../providers/news/news';
 import { ActionsProvider } from '../providers/actions/actions';
 import { CallNumber } from '@ionic-native/call-number';
 
+
 @NgModule({
   declarations: [
     MyApp,

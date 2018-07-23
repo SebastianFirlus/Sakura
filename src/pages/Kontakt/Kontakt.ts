@@ -4,6 +4,7 @@ import { ToastController } from 'ionic-angular';
 import {ReservationProvider} from "../../providers/reservation/reservation";
 import { CallNumber } from '@ionic-native/call-number';
 
+
 @Component({
   selector: 'page-Kontakt',
   templateUrl: 'Kontakt.html'
