@@ -28,7 +28,7 @@ app.use(cors());
 
 var news = [
   {id: 1, heading: "Neue Preise", body: "Wir haben unsere Preise aktualisiert!"},
-  {id:2, heading: "Neues Gericht: Oktopusbällchen", body: "Wir haben ab sofot auch Oktopusbällchen in unserer Speisekarte!"}
+  {id:2, heading: "Neues Gericht: Oktopusbällchen", body: "Wir haben ab sofort auch Oktopusbällchen in unserer Speisekarte!"}
   ];
 
 var actionsM = [
@@ -36,11 +36,11 @@ var actionsM = [
 ];
 
 var actionsW = [
-  {id: 1, heading: "KW 23 Aktion" ,body: "Alle 0,5L Softdrinks für nur 3€! Zeigen Sie einfach die App vor der Bestellung vor."}
+  {id: 1, heading: "KW 43 Aktion" ,body: "Alle 0,5L Softdrinks für nur 3€! Zeigen Sie einfach die App bei der Bestellung vor."}
 ];
 
 var specials = [
-  {id: 1, heading: "Zurzeit leider keine Specials" ,body: "Schauen Sie einfach später nochmal vorbei :)"}
+  {id: 1, heading: "Zurzeit haben wir leider keine Specials." ,body: "Schauen Sie einfach später nochmal vorbei :)"}
 ];
 
 var _reservation = {

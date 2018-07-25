@@ -18,6 +18,7 @@ import {HttpModule} from "@angular/http";
 import { NewsProvider } from '../providers/news/news';
 import { ActionsProvider } from '../providers/actions/actions';
 import { CallNumber } from '@ionic-native/call-number';
+import { Geolocation } from '@ionic-native/geolocation';
 
 
 @NgModule({
@@ -55,7 +56,8 @@ import { CallNumber } from '@ionic-native/call-number';
     HttpClientModule,
     NewsProvider,
     ActionsProvider,
-    CallNumber
+    CallNumber,
+    Geolocation
   ]
 })
 export class AppModule {}
