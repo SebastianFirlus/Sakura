@@ -33,7 +33,9 @@
   </ion-item>
   <button block color="custom-yellow" ion-button (click)="postReservation(reservation)">Abschicken</button>
   <h1>Restaurant Sakura Sushi & Grill</h1>
-  <p>Mendener Straße 117<br/>45219 Essen-Kettwig</p>
+  <p>Mendener Straße 117<br/>45219 Essen-Kettwig
+    <br/><br/><i>(Mit einem Klick auf "Marker hinzufügen" können Sie das Restaurant Sakura markieren und sich einen Überblick über die Umgebung verschaffen.)</i>
+  </p>
 
   <ion-header>
     <ion-navbar>
@@ -41,7 +43,7 @@
         Map
       </ion-title>
       <ion-buttons end>
-        <button ion-button (click)="addMarker()"><ion-icon name="add"></ion-icon>Add Marker</button>
+        <button ion-button (click)="addMarker()"><ion-icon name="add"></ion-icon>Marker hinzufügen</button>
       </ion-buttons>
     </ion-navbar>
   </ion-header>
