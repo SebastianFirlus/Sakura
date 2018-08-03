@@ -8,3 +8,6 @@ Grundlegend ist die App in fünf Seiten (Home, Speisekarte, Kontakt, Aktion, Gut
 
 <h2>Ausblick</h2>
 Das bisherige Ergebnis der App ist eine erste Demoversion, welche nach dem Projekt weiterentwickelt und veröffentlicht werden soll. Für den Ausblick sollten beispielsweise für die E-Mail Generierung oder auch für die Daten des Kunden beim Kontaktformular Sicherheitsmechanismen implementiert werden. Außerdem sollte es möglich sein den Gutschein über die App zu bezahlen, sodass der Kunden diesen eventuell zugeschickt bekommt oder diesen vor Ort abholt. Allerdings ist der Inhaber mit dem bisher erreichten Stand der App sehr zufrieden, da die grundlegenden Funktionen implementiert worden sind und die App bereits genutzt werden kann.
+
+<h2>Anwendung</h2>
+Wenn in Webstorm der Befehl clone Repository ausgewählt wird, ist der Code der Sakura App verfügbar. Um im Web die App aufzurufen, muss zunächst ```node server.js``` und danach ```ionic serve``` im Terminal ausgeführt werden.
